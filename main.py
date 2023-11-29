@@ -7,7 +7,7 @@ import sys
 
 
 # def closest_fraction(target_decimal, max_denominator=10):
-#     best_fraction = None
+#     best_fraction = (0, 0)
 #     best_difference = float("inf")
 #     for denominator in range(max_denominator, 0, -1):
 #         numerator = round(target_decimal * denominator)
