@@ -1,9 +1,9 @@
+from os import environ
 import csv
 from datetime import datetime, timezone
 import json
 from random import choice
 import requests
-import sys
 
 
 # def closest_fraction(target_decimal, max_denominator=10):
@@ -36,7 +36,11 @@ def build_totaliser(amount_raised, target):
 
 
 def run():
-    r = requests.get(sys.argv[1])
+    url = (
+        "https://sf-api-production.thebiggive.org.uk"
+        "/campaigns/services/apexrest/v1.0/campaigns/a056900002RXr85AAD"
+    )
+    r = requests.get(url)
     r.raise_for_status()
     data = r.json()
 
@@ -56,6 +60,9 @@ def run():
     average_donation = amount_raised / donation_count / 2
     total_percent = 100 * amount_raised / target
 
+    with open("data/output.json") as fh:
+        prev_data = json.load(fh)
+
     message = (
         f"£{amount_raised:,} raised so far, "
         f"from {donation_count:,} donations. "
@@ -66,12 +73,10 @@ def run():
     )
     print(message)
 
-    with open("data/output.json") as fh:
-        prev_data = json.load(fh)
-
-    if prev_data["donationCount"] != data["donationCount"]:
+    slack_trigger_url = environ.get("SLACK_TRIGGER_URL")
+    if slack_trigger_url and prev_data["donationCount"] != data["donationCount"]:
         requests.post(
-            sys.argv[2],
+            slack_trigger_url,
             json={
                 "message": message,
             })
