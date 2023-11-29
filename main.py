@@ -77,7 +77,7 @@ def run():
             })
 
     with open("data/output.json", "w") as fh:
-        json.dump(data, fh)
+        json.dump(data, fh, indent=4)
 
 
 if __name__ == "__main__":
