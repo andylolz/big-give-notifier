@@ -19,6 +19,22 @@ import sys
 #     return best_fraction
 
 
+def build_totaliser(amount_raised, target):
+    with open("icons.csv") as fh:
+        icon_pairs = list(csv.reader(fh))[1:]
+    done_icon, todo_icon = choice(icon_pairs)
+
+    # done_total, totaliser_total = closest_fraction(amount_raised / target)
+    # todo_total = totaliser_total - done_total
+    totaliser_size = 10
+    done_total = round(totaliser_size * amount_raised / target)
+    todo_total = totaliser_size - done_total
+    return "{done}{todo}".format(
+        done=(done_total * f":{done_icon}: "),
+        todo=(todo_total * f":{todo_icon}: "),
+    ).strip()
+
+
 def run():
     r = requests.get(sys.argv[1])
     r.raise_for_status()
@@ -32,22 +48,11 @@ def run():
     if now_dt > end_dt:
         return
 
-    with open("icons.csv") as fh:
-        icon_pairs = list(csv.reader(fh))[1:]
-    done_icon, todo_icon = choice(icon_pairs)
-
     amount_raised = int(data["amountRaised"])
     target = int(data["target"])
     donation_count = int(data["donationCount"])
-    # done_total, totaliser_total = closest_fraction(amount_raised / target)
-    # todo_total = totaliser_total - done_total
-    totaliser_size = 10
-    done_total = round(totaliser_size * amount_raised / target)
-    todo_total = totaliser_size - done_total
-    totaliser = "{done}{todo}".format(
-        done=(done_total * f":{done_icon}: "),
-        todo=(todo_total * f":{todo_icon}: "),
-    ).strip()
+
+    totaliser = build_totaliser(amount_raised, target)
     average_donation = amount_raised / donation_count / 2
     total_percent = 100 * amount_raised / target
 
