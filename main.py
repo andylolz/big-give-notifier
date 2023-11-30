@@ -1,7 +1,8 @@
-from os import environ
 import csv
 from datetime import datetime, timezone
 import json
+import math
+from os import environ
 from random import choice
 import requests
 
@@ -27,7 +28,9 @@ def build_totaliser(amount_raised, target):
     # done_total, totaliser_total = closest_fraction(amount_raised / target)
     # todo_total = totaliser_total - done_total
     totaliser_size = 10
-    done_total = round(totaliser_size * amount_raised / target)
+    done_total = min(
+        totaliser_size,
+        math.floor(totaliser_size * amount_raised / target))
     todo_total = totaliser_size - done_total
     return "{done}{todo}".format(
         done=(done_total * f":{done_icon}: "),
