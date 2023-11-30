@@ -19,10 +19,10 @@
     "parentUsesSharedFunds": false,
     "parentTarget": 30219074.52,
     "parentRef": "christmas-challenge-2023",
-    "parentDonationCount": 42895,
-    "parentAmountRaised": 16219947.21,
+    "parentDonationCount": 43750,
+    "parentAmountRaised": 16401504.21,
     "matchFundsTotal": 28000.0,
-    "matchFundsRemaining": 15408.0,
+    "matchFundsRemaining": 14348.0,
     "logoUri": null,
     "isMatched": true,
     "impactSummary": "Your donation will:\r\n\r\nProvide people across the UK with access to reliable information, both on traditional and social media.\r\n\r\nHelp make internet companies accountable for the misinformation spread on their platforms and scrutinise their use of AI and algorithms;\r\n\r\nRaise standards in Parliament and stop politicians and journalists from making inaccurate claims;\r\n\r\nHelp our preparations for fact checking the next general election.\r\n\r\nPromote a culture of accuracy for a fairer public debate.",
@@ -31,7 +31,7 @@
     "hidden": false,
     "feePercentage": null,
     "endDate": "2023-12-05T12:00:00.000Z",
-    "donationCount": 355,
+    "donationCount": 395,
     "currencyCode": "GBP",
     "countries": [
         "United Kingdom"
@@ -79,7 +79,7 @@
         "General Public/Humankind"
     ],
     "bannerUri": "https://images-production.thebiggive.org.uk/0011r00002JgW7vAAF/CCampaign%20Banner/30d3b7db-0784-43f5-97cc-6d7217f69c7a.png",
-    "amountRaised": 25204.0,
+    "amountRaised": 27324.0,
     "alternativeFundUse": "If the campaign target is not met we will continue to raise funds from other sources. These will be used to further the aims above. We are confident that all funds will be spent to further the aims above, even if specific activities were changed or adapted.",
     "aims": [
         "We will continue fact check and correct false claims. Your matched donation will help our team identify inaccurate claims, produce well-evidenced fact checks, and ask for corrections; stopping claims from spreading further.",
