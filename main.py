@@ -57,11 +57,7 @@ def run():
         minutes_to_go = int((end_dt - now_dt).seconds / 60)
         time_to_go = f":clock11: Just {minutes_to_go} minutes to go!!! :clock11:"
     else:
-        mod_hours = (24 - hours_to_go - 1) % 12
-        if mod_hours == 0:
-            emoji = ":clock12:"
-        else:
-            emoji = f":clock{mod_hours}:"
+        emoji = ":clock" + now_dt.strftime("%-I") + "30" * (now_dt.minute // 30) + ":"
         time_to_go = f"{emoji} {hours_to_go} hours to go! {emoji}"
 
     amount_raised = int(data["amountRaised"])
