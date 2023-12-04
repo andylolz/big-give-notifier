@@ -55,12 +55,14 @@ def run():
     hours_to_go = int((end_dt - now_dt).seconds / 60 / 60)
     if hours_to_go == 0:
         minutes_to_go = int((end_dt - now_dt).seconds / 60)
-        time_to_go = f"Just {minutes_to_go} minutes to go!!!"
+        time_to_go = f":clock11: Just {minutes_to_go} minutes to go!!! :clock11:"
     else:
-        if hours_to_go <= 12:
-            time_to_go = f":clock{hours_to_go}: {hours_to_go} hours to go! :clock{hours_to_go}:"
+        mod_hours = hours_to_go % 12
+        if mod_hours == 0:
+            emoji = ":clock12:"
         else:
-            time_to_go = f":sweat_smile: {hours_to_go} hours to go! :sweat_smile:"
+            emoji = f":clock{mod_hours}:"
+        time_to_go = f"{emoji} {hours_to_go} hours to go! {emoji}"
 
     amount_raised = int(data["amountRaised"])
     target = int(data["target"])
