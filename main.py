@@ -48,12 +48,19 @@ def run():
     data = r.json()
 
     end_dt = datetime.fromisoformat(data["endDate"])
-    # start_dt = datetime.fromisoformat(data["startDate"])
-    # time_complete = 100 * (now_dt - start_dt).total_seconds() / (end_dt - start_dt).total_seconds()
-
     now_dt = datetime.now(tz=timezone.utc)
     if now_dt > end_dt:
         return
+
+    hours_to_go = int((end_dt - now_dt).seconds / 60 / 60)
+    if hours_to_go == 0:
+        minutes_to_go = int((end_dt - now_dt).seconds / 60)
+        time_to_go = f"Just {minutes_to_go} minutes to go!!!"
+    else:
+        if hours_to_go <= 12:
+            time_to_go = f":clock{hours_to_go}: {hours_to_go} hours to go! :clock{hours_to_go}:"
+        else:
+            time_to_go = f":sweat_smile: {hours_to_go} hours to go! :sweat_smile:"
 
     amount_raised = int(data["amountRaised"])
     target = int(data["target"])
@@ -67,6 +74,7 @@ def run():
         prev_data = json.load(fh)
 
     message = (
+        f"{time_to_go}\n\n"
         f"£{amount_raised:,} raised so far, "
         f"from {donation_count:,} donations. "
         f"That’s an average donation of £{average_donation:.2f}.\n\n"
