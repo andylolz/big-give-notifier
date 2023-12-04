@@ -57,7 +57,7 @@ def run():
         minutes_to_go = int((end_dt - now_dt).seconds / 60)
         time_to_go = f":clock11: Just {minutes_to_go} minutes to go!!! :clock11:"
     else:
-        mod_hours = hours_to_go % 12
+        mod_hours = (24 - hours_to_go - 1) % 12
         if mod_hours == 0:
             emoji = ":clock12:"
         else:
