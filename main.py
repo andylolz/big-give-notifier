@@ -50,15 +50,15 @@ def run():
     end_dt = datetime.fromisoformat(data["endDate"])
     now_dt = datetime.now(tz=timezone.utc)
     if now_dt > end_dt:
-        time_to_go = "It’s OVER. Congratulations everyone! (especially @Josey).\n\n"
+        return
+
+    hours_to_go = int((end_dt - now_dt).seconds / 60 / 60)
+    if hours_to_go == 0:
+        minutes_to_go = int((end_dt - now_dt).seconds / 60)
+        time_to_go = f":drum_with_drumsticks: Just {minutes_to_go} minutes to go! :drum_with_drumsticks:"
     else:
-        hours_to_go = int((end_dt - now_dt).seconds / 60 / 60)
-        if hours_to_go == 0:
-            minutes_to_go = int((end_dt - now_dt).seconds / 60)
-            time_to_go = f":drum_with_drumsticks: Just {minutes_to_go} minutes to go! :drum_with_drumsticks:"
-        else:
-            emoji = ":clock" + now_dt.strftime("%-I") + "30" * (now_dt.minute // 30) + ":"
-            time_to_go = f"{emoji} {hours_to_go} hours to go! {emoji}"
+        emoji = ":clock" + now_dt.strftime("%-I") + "30" * (now_dt.minute // 30) + ":"
+        time_to_go = f"{emoji} {hours_to_go} hours to go! {emoji}"
 
     amount_raised = int(data["amountRaised"])
     target = int(data["target"])
@@ -73,12 +73,12 @@ def run():
 
     message = (
         f"{time_to_go}\n\n"
-        f"£{amount_raised:,} raised, "
+        f"£{amount_raised:,} raised so far, "
         f"from {donation_count:,} donations. "
         f"That’s an average donation of £{average_donation:.2f}.\n\n"
         "Progress to target:\n"
-        f":tada: :tada: :tada: :tada: :tada: :tada: :tada: :tada: :tada: :tada:\n"
-        f"(i.e. {total_percent:.1f}% :tada:)"
+        f"{totaliser}\n"
+        f"(i.e. {total_percent:.1f}%)"
     )
     print(message)
 
