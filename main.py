@@ -26,7 +26,7 @@ def build_totaliser(amount_raised, target):
 def run():
     url = (
         "https://sf-api-production.thebiggive.org.uk"
-        "/campaigns/services/apexrest/v1.0/campaigns/a056900002RXr85AAD"
+        "/campaigns/services/apexrest/v1.0/campaigns/a056900002TPVWCAA5"
     )
     r = requests.get(url)
     r.raise_for_status()
