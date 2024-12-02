@@ -7,12 +7,12 @@
     "updates": [],
     "title": "Fighting bad information",
     "thankYouMessage": "Thank you so much for your gift to Full Fact. Your donation will help reduce the harm caused by bad information and advocate for a better information environment. You can find out more about our work on our website: fullfact.org.\n\nMany thanks,\nFull Fact",
-    "target": 64000,
+    "target": 64000.0,
     "surplusDonationInfo": null,
-    "summary": "Bad information causes harm. It damages people’s health and promotes hate.\r\n\r\nAs our team of independent fact checkers continue to fight the causes and consequences of bad information, a new government offers a renewed opportunity to hold leaders to account and build public trust.",
+    "summary": "Bad information causes harm. It damages people\u2019s health and promotes hate.\r\n\r\nAs our team of independent fact checkers continue to fight the causes and consequences of bad information, a new government offers a renewed opportunity to hold leaders to account and build public trust.",
     "status": "Preview",
     "startDate": "2024-12-03T12:00:00.000Z",
-    "solution": "We fact check politicians, journalists, and viral online content; giving millions of people access to good information. By asking people to correct the record, the spread of bad information is reduced. \r\n\r\nKeir Starmer has said that public “lack of trust” in politics “can only be healed by actions, not words.” So Full Fact will be monitoring progress against what was promised in exchange for the public's votes. Our Government Tracker will help people understand if the government is delivering.",
+    "solution": "We fact check politicians, journalists, and viral online content; giving millions of people access to good information. By asking people to correct the record, the spread of bad information is reduced. \r\n\r\nKeir Starmer has said that public \u201clack of trust\u201d in politics \u201ccan only be healed by actions, not words.\u201d So Full Fact will be monitoring progress against what was promised in exchange for the public's votes. Our Government Tracker will help people understand if the government is delivering.",
     "ready": true,
     "quotes": [],
     "problem": "The impact of misinformation is felt by everyone. Disinformation is used to spread hate and deepen divisions. When our politicians and media make and spread false claims, and when misleading information is spread online, we all suffer. \n \nThe election campaign saw the widespread use of deceptive campaigning tactics and high-profile false claims. Claims on issues like immigration, the environment, and health continue to be used as political ammunition. In this climate, misinformation can thrive.",
@@ -20,13 +20,13 @@
     "parentTarget": 40130179.9,
     "parentRef": "christmas-challenge-2024",
     "parentDonationCount": 0,
-    "parentAmountRaised": 0,
-    "matchFundsTotal": 32000,
-    "matchFundsRemaining": 32000,
+    "parentAmountRaised": 0.0,
+    "matchFundsTotal": 32000.0,
+    "matchFundsRemaining": 32000.0,
     "logoUri": null,
     "isMatched": true,
-    "impactSummary": "Your donation will:\r\n\r\nProvide people with access to the good information they need to make informed decisions on the issues that matter to them.\r\n\r\nSupport work on our Government Tracker; monitoring the government’s progress against its manifesto pledges. \r\n\r\nRaise standards in Parliament and stop politicians from making inaccurate claims; promoting a culture of accuracy for a fairer public debate.\r\n\r\nHelp develop AI tools that assist our fact checkers - ensuring AI helps in the fight against misinformation.",
-    "impactReporting": "We keep detailed records of how many people we reach, the numbers of fact checks we publish, how many correction requests we place, and how many are acted upon. We’ll also be recording and sharing the number of Labour Party manifesto pledges we are tracking as this number increases.\r\n\r\nIn addition, we regularly report on our work in our weekly newsletters to supporters, and commission polls and surveys on how the general public reacts to bad information over time.",
+    "impactSummary": "Your donation will:\r\n\r\nProvide people with access to the good information they need to make informed decisions on the issues that matter to them.\r\n\r\nSupport work on our Government Tracker; monitoring the government\u2019s progress against its manifesto pledges. \r\n\r\nRaise standards in Parliament and stop politicians from making inaccurate claims; promoting a culture of accuracy for a fairer public debate.\r\n\r\nHelp develop AI tools that assist our fact checkers - ensuring AI helps in the fight against misinformation.",
+    "impactReporting": "We keep detailed records of how many people we reach, the numbers of fact checks we publish, how many correction requests we place, and how many are acted upon. We\u2019ll also be recording and sharing the number of Labour Party manifesto pledges we are tracking as this number increases.\r\n\r\nIn addition, we regularly report on our work in our weekly newsletters to supporters, and commission polls and surveys on how the general public reacts to bad information over time.",
     "id": "a056900002TPVWCAA5",
     "hidden": false,
     "endDate": "2024-12-10T12:00:00.000Z",
@@ -63,30 +63,30 @@
     "budgetDetails": [
         {
             "description": "to fact check and help stop the spread of bad information that causes harm.",
-            "amount": 16000
+            "amount": 16000.0
         },
         {
             "description": "to help monitor the government against its manifesto pledges.",
-            "amount": 16000
+            "amount": 16000.0
         },
         {
-            "description": "to push forward our work for honesty and trust, and build a community    which stands against bad information.",
-            "amount": 16000
+            "description": "to push forward our work for honesty and trust, and build a community  which stands against bad information.",
+            "amount": 16000.0
         },
         {
             "description": "to build capacity for working in defined areas like health and climate.",
-            "amount": 16000
+            "amount": 16000.0
         }
     ],
     "beneficiaries": [
         "General Public/Humankind"
     ],
     "bannerUri": "https://images-production.thebiggive.org.uk/0011r00002JgW7vAAF/CCampaign%20Banner/c67d5470-1568-4334-be20-0b64e8a0de26.png",
-    "amountRaised": 0,
+    "amountRaised": 0.0,
     "alternativeFundUse": "If the campaign target is not met we will continue to raise funds from other sources. These will be used to further the aims above if additional funds are raised. We are confident that all funds will be able to be spent to further the aims above, even if specific activities are changed or adapted.",
     "aims": [
         "We will continue to fact check the claims of politicians from all parties and work constructively with MPs to ensure corrections are made, and misinformation does not spread further.",
-        "Our Government Tracker will monitor the government’s progress against the pledges made in the Labour Party manifesto, and we will report what we find to the public.",
+        "Our Government Tracker will monitor the government\u2019s progress against the pledges made in the Labour Party manifesto, and we will report what we find to the public.",
         "During the election, we ramped up activity - checking party manifestos on their day of launch; TV debates in real time and multiple claims. Our checks and articles were seen by millions. Your donation will help continue this level of activity; to give people access to the good information they need.",
         "We will continue to build our focus in specific areas where the debate is highly politicised and prone to misinformation - like climate and decarbonisation, immigration, and health.",
         "Your support will strengthen our calls for the government to improve online safety legislation to counter harmful misinformation - especially relating to health or when generated by AI."
