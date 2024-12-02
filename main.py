@@ -51,7 +51,7 @@ def run():
     donation_count = int(data["donationCount"])
 
     totaliser = build_totaliser(amount_raised, target)
-    average_donation = amount_raised / donation_count / 2
+    average_donation = amount_raised / donation_count / 2 if donation_count else 0
     total_percent = 100 * amount_raised / target
 
     with open("data/output.json") as fh:
