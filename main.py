@@ -7,26 +7,11 @@ from random import choice
 import requests
 
 
-# def closest_fraction(target_decimal, max_denominator=10):
-#     best_fraction = (0, 0)
-#     best_difference = float("inf")
-#     for denominator in range(max_denominator, 0, -1):
-#         numerator = round(target_decimal * denominator)
-#         current_fraction = numerator / denominator
-#         difference = abs(target_decimal - current_fraction)
-#         if difference < best_difference:
-#             best_fraction = (numerator, denominator)
-#             best_difference = difference
-#     return best_fraction
-
-
 def build_totaliser(amount_raised, target):
     with open("icons.csv") as fh:
         icon_pairs = list(csv.reader(fh))[1:]
     done_icon, todo_icon = choice(icon_pairs)
 
-    # done_total, totaliser_total = closest_fraction(amount_raised / target)
-    # todo_total = totaliser_total - done_total
     totaliser_size = 10
     done_total = min(
         totaliser_size,
