@@ -60,7 +60,7 @@ def run():
     message = (
         f"{time_to_go}\n\n"
         f"£{amount_raised:,} raised so far, "
-        f"from {donation_count:,} donations. "
+        f"from {donation_count:,} donation{'' if donation_count == 1 else 's'}. "
         f"That’s an average donation of £{average_donation:.2f}.\n\n"
         "Progress to target:\n"
         f"{totaliser}\n"
