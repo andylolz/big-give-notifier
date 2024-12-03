@@ -38,7 +38,7 @@ def run():
         # it’s finished
         return
 
-    hours_to_go = int((end_dt - now_dt).seconds / 60 / 60)
+    hours_to_go = int((end_dt - now_dt).total_seconds() / 60 / 60)
     if hours_to_go == 0:
         minutes_to_go = int((end_dt - now_dt).seconds / 60)
         time_to_go = f":drum_with_drumsticks: Just {minutes_to_go} minutes to go! :drum_with_drumsticks:"
