@@ -54,7 +54,8 @@ def run():
 
     totaliser = build_totaliser(amount_raised, target)
     average_donation = amount_raised / donation_count / 2 if donation_count else 0
-    total_percent = 100 * amount_raised / target
+    # round down to 1dp
+    total_percent = math.floor(1000 * amount_raised / target) / 10
 
     with open("data/output.json") as fh:
         prev_data = json.load(fh)
@@ -66,7 +67,7 @@ def run():
         f"That’s an average donation of £{average_donation:.2f}.\n\n"
         "Progress to target:\n"
         f"{totaliser}\n"
-        f"(i.e. {total_percent:.1f}%)"
+        f"(i.e. {total_percent}%)"
     )
     print(message)
 
