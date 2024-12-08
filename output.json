@@ -19,10 +19,10 @@
     "parentUsesSharedFunds": false,
     "parentTarget": 40351779.9,
     "parentRef": "christmas-challenge-2024",
-    "parentDonationCount": 86568,
-    "parentAmountRaised": 31986180.75,
+    "parentDonationCount": 86754,
+    "parentAmountRaised": 32009694.0,
     "matchFundsTotal": 32000.0,
-    "matchFundsRemaining": 17264.0,
+    "matchFundsRemaining": 17234.0,
     "logoUri": null,
     "isMatched": true,
     "impactSummary": "Your donation will:\r\n\r\nProvide people with access to the good information they need to make informed decisions on the issues that matter to them.\r\n\r\nSupport work on our Government Tracker; monitoring the government\u2019s progress against its manifesto pledges. \r\n\r\nRaise standards in Parliament and stop politicians from making inaccurate claims; promoting a culture of accuracy for a fairer public debate.\r\n\r\nHelp develop AI tools that assist our fact checkers - ensuring AI helps in the fight against misinformation.",
@@ -30,7 +30,7 @@
     "id": "a056900002TPVWCAA5",
     "hidden": false,
     "endDate": "2024-12-10T12:00:00.000Z",
-    "donationCount": 446,
+    "donationCount": 447,
     "currencyCode": "GBP",
     "countries": [
         "United Kingdom"
@@ -82,7 +82,7 @@
         "General Public/Humankind"
     ],
     "bannerUri": "https://images-production.thebiggive.org.uk/0011r00002JgW7vAAF/CCampaign%20Banner/c67d5470-1568-4334-be20-0b64e8a0de26.png",
-    "amountRaised": 29472.0,
+    "amountRaised": 29532.0,
     "alternativeFundUse": "If the campaign target is not met we will continue to raise funds from other sources. These will be used to further the aims above if additional funds are raised. We are confident that all funds will be able to be spent to further the aims above, even if specific activities are changed or adapted.",
     "aims": [
         "We will continue to fact check the claims of politicians from all parties and work constructively with MPs to ensure corrections are made, and misinformation does not spread further.",
