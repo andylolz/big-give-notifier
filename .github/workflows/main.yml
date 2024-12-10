@@ -2,10 +2,6 @@ name: Run
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "30 0-8 * * *"
-    - cron: "*/5 9-16 * * *"
-    - cron: "30 17-23 * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
