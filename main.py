@@ -34,13 +34,15 @@ def run():
 
     end_dt = datetime.fromisoformat(data["endDate"])
     now_dt = datetime.now(tz=timezone.utc)
+
+    finished = False
+    hours_to_go = int((end_dt - now_dt).total_seconds() / 60 / 60)
     if now_dt > end_dt:
         # it’s finished
-        return
-
-    hours_to_go = int((end_dt - now_dt).total_seconds() / 60 / 60)
-    if hours_to_go == 0:
-        minutes_to_go = int((end_dt - now_dt).seconds / 60)
+        finished = True
+        time_to_go = "Time’s up! The Big Give™ is over :heart: :wave: :smiling_face_with_tear: (For this year, anyway.)\n\n"
+    elif hours_to_go < 2:
+        minutes_to_go = int((end_dt - now_dt).total_seconds() / 60)
         time_to_go = f":drum_with_drumsticks: Just {minutes_to_go} minutes to go! :drum_with_drumsticks:\n\n"
     elif hours_to_go < 24:
         emoji = ":clock" + now_dt.strftime("%-I") + "30" * (now_dt.minute // 30) + ":"
@@ -62,7 +64,7 @@ def run():
 
     message = (
         f"{time_to_go}"
-        f"£{amount_raised:,} raised so far, "
+        f"£{amount_raised:,} raised{' so far' if not finished else ''}, "
         f"from {donation_count:,} donation{'' if donation_count == 1 else 's'}. "
         f"That’s an average donation of £{average_donation:.2f}.\n\n"
         "Progress to target:\n"
